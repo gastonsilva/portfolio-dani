@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nani</title>
+  <!-- <meta name="description" content="An animation featuring image tiles that transform into a full image when a menu item is clicked."> -->
+  <!-- <meta name="keywords" content="animation, menu, image, gsap, page transition"> -->
+  <!-- <meta name="author" content="Codrops"> -->
+  <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+  <!-- <link rel="stylesheet" href="https://use.typekit.net/gmc0vlm.css"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/splitting.css" />
+  <link rel="stylesheet" type="text/css" href="css/splitting-cells.css" />
+  <!-- Check cssvars support -->
+  <script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+</head>
+
+<body class="loading">
+  <main>
+    <div class="thumbgrid-wrap">
+      <div class="thumbgrid">
+        <div class="thumbgrid__item pos-1">
+          <div class="thumbgrid__item-img" style="background-image: url(img/1.jpg)"></div>
+        </div>
+        <div class="thumbgrid__item pos-2">
+          <div class="thumbgrid__item-img" style="background-image: url(img/1.jpg)"></div>
+        </div>
+        <div class="thumbgrid__item pos-3">
+          <div class="thumbgrid__item-img" style="background-image: url(img/1.jpg)"></div>
+        </div>
+        <div class="thumbgrid__item pos-4">
+          <div class="thumbgrid__item-img" style="background-image: url(img/1.jpg)"></div>
+        </div>
+      </div>
+      <div class="thumbgrid">
+        <div class="thumbgrid__item pos-5">
+          <div class="thumbgrid__item-img" style="background-image: url(img/2.jpg)"></div>
+        </div>
+        <div class="thumbgrid__item pos-6">
+          <div class="thumbgrid__item-img" style="background-image: url(img/2.jpg)"></div>
+        </div>
+        <div class="thumbgrid__item pos-7">
+          <div class="thumbgrid__item-img" style="background-image: url(img/2.jpg)"></div>
+        </div>
+        <div class="thumbgrid__item pos-8">
+          <div class="thumbgrid__item-img" style="background-image: url(img/2.jpg)"></div>
+        </div>
+      </div>
+      <div class="thumbgrid">
+        <div class="thumbgrid__item pos-9">
+          <div class="thumbgrid__item-img" style="background-image: url(img/3.jpg)"></div>
+        </div>
+        <div class="thumbgrid__item pos-10">
+          <div class="thumbgrid__item-img" style="background-image: url(img/3.jpg)"></div>
+        </div>
+        <div class="thumbgrid__item pos-11">
+          <div class="thumbgrid__item-img" style="background-image: url(img/3.jpg)"></div>
+        </div>
+        <div class="thumbgrid__item pos-12">
+          <div class="thumbgrid__item-img" style="background-image: url(img/3.jpg)"></div>
+        </div>
+      </div>
+      <div class="thumbgrid">
+        <div class="thumbgrid__item pos-13">
+          <div class="thumbgrid__item-img" style="background-image: url(img/4.jpg)"></div>
+        </div>
+        <div class="thumbgrid__item pos-14">
+          <div class="thumbgrid__item-img" style="background-image: url(img/4.jpg)"></div>
+        </div>
+        <div class="thumbgrid__item pos-15">
+          <div class="thumbgrid__item-img" style="background-image: url(img/4.jpg)"></div>
+        </div>
+        <div class="thumbgrid__item pos-16">
+          <div class="thumbgrid__item-img" style="background-image: url(img/4.jpg)"></div>
+        </div>
+      </div>
+      <div class="thumbgrid">
+        <div class="thumbgrid__item pos-17">
+          <div class="thumbgrid__item-img" style="background-image: url(img/5.jpg)"></div>
+        </div>
+        <div class="thumbgrid__item pos-18">
+          <div class="thumbgrid__item-img" style="background-image: url(img/5.jpg)"></div>
+        </div>
+        <div class="thumbgrid__item pos-19">
+          <div class="thumbgrid__item-img" style="background-image: url(img/5.jpg)"></div>
+        </div>
+        <div class="thumbgrid__item pos-20">
+          <div class="thumbgrid__item-img" style="background-image: url(img/5.jpg)"></div>
+        </div>
+      </div>
+      <div class="thumbgrid">
+        <div class="thumbgrid__item pos-21">
+          <div class="thumbgrid__item-img" style="background-image: url(img/6.jpg)"></div>
+        </div>
+        <div class="thumbgrid__item pos-22">
+          <div class="thumbgrid__item-img" style="background-image: url(img/6.jpg)"></div>
+        </div>
+        <div class="thumbgrid__item pos-23">
+          <div class="thumbgrid__item-img" style="background-image: url(img/6.jpg)"></div>
+        </div>
+        <div class="thumbgrid__item pos-24">
+          <div class="thumbgrid__item-img" style="background-image: url(img/6.jpg)"></div>
+        </div>
+      </div>
+      <div class="thumbgrid">
+        <div class="thumbgrid__item pos-25">
+          <div class="thumbgrid__item-img" style="background-image: url(img/7.jpg)"></div>
+        </div>
+        <div class="thumbgrid__item pos-26">
+          <div class="thumbgrid__item-img" style="background-image: url(img/7.jpg)"></div>
+        </div>
+        <div class="thumbgrid__item pos-27">
+          <div class="thumbgrid__item-img" style="background-image: url(img/7.jpg)"></div>
+        </div>
+        <div class="thumbgrid__item pos-28">
+          <div class="thumbgrid__item-img" style="background-image: url(img/7.jpg)"></div>
+        </div>
+      </div>
+    </div>
+    <div class="content-wrap">
+      <div class="content">
+        <button class="content__back unbutton">&larr; volver</button>
+        <h2 class="content__title">Relajaci&oacute;nVacacional</h2>
+        <p class="content__desc">Identidad de marca y material publicitario para un sitio web sobre
+          caba&ntilde;as.</p>
+        <div class="content__images">
+          <div class="thumb thumb--prev">
+            <div class="thumb__inner" style="background-image: url(img/7.jpg)"></div>
+          </div>
+          <a href="proyecto1.html">
+            <div class="thumbgrid"><!-- menu images get flipped over here--></div>
+          </a>
+          <div class="thumb thumb--next">
+            <div class="thumb__inner" style="background-image: url(img/2.jpg)"></div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <button class="content__back unbutton">&larr; volver</button>
+        <h2 class="content__title">Diversi&oacute;nJaponesa</h2>
+        <p class="content__desc">&lt;Inserte texto de Diversi&oacute;nJaponesa aqu&iacute;&gt;</p>
+        <div class="content__images">
+          <div class="thumb thumb--prev">
+            <div class="thumb__inner" style="background-image: url(img/1.jpg)"></div>
+          </div>
+          <a href="proyecto1.html">
+            <div class="thumbgrid"></div>
+          </a>
+          <div class="thumb thumb--next">
+            <div class="thumb__inner" style="background-image: url(img/3.jpg)"></div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <button class="content__back unbutton">&larr; volver</button>
+        <h2 class="content__title">FelízPosesi&oacute;n</h2>
+        <p class="content__desc">&lt;Inserte texto de FelízPosesi&oacute;n aqu&iacute;&gt;</p>
+        <div class="content__images">
+          <div class="thumb thumb--prev">
+            <div class="thumb__inner" style="background-image: url(img/2.jpg)"></div>
+          </div>
+          <a href="proyecto1.html">
+            <div class="thumbgrid"></div>
+          </a>
+          <div class="thumb thumb--next">
+            <div class="thumb__inner" style="background-image: url(img/4.jpg)"></div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <button class="content__back unbutton">&larr; volver</button>
+        <h2 class="content__title">MovilidadConectada</h2>
+        <p class="content__desc">&lt;Inserte texto de MovilidadConectada aqu&iacute;&gt;</p>
+        <div class="content__images">
+          <div class="thumb thumb--prev">
+            <div class="thumb__inner" style="background-image: url(img/3.jpg)"></div>
+          </div>
+          <a href="proyecto1.html">
+            <div class="thumbgrid"></div>
+          </a>
+          <div class="thumb thumb--next">
+            <div class="thumb__inner" style="background-image: url(img/5.jpg)"></div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <button class="content__back unbutton">&larr; volver</button>
+        <h2 class="content__title">HábitoSaludable</h2>
+        <p class="content__desc">&lt;Inserte texto de HábitoSaludable aqu&iacute;&gt;</p>
+        <div class="content__images">
+          <div class="thumb thumb--prev">
+            <div class="thumb__inner" style="background-image: url(img/4.jpg)"></div>
+          </div>
+          <a href="proyecto1.html">
+            <div class="thumbgrid"></div>
+          </a>
+          <div class="thumb thumb--next">
+            <div class="thumb__inner" style="background-image: url(img/6.jpg)"></div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <button class="content__back unbutton">&larr; volver</button>
+        <h2 class="content__title">InsumosOdontol&oacute;gicos</h2>
+        <p class="content__desc">&lt;Inserte texto de InsumosOdontol&oacute;gicos aqu&iacute;&gt;</p>
+        <div class="content__images">
+          <div class="thumb thumb--prev">
+            <div class="thumb__inner" style="background-image: url(img/5.jpg)"></div>
+          </div>
+          <a href="proyecto1.html">
+            <div class="thumbgrid"></div>
+          </a>
+          <div class="thumb thumb--next">
+            <div class="thumb__inner" style="background-image: url(img/7.jpg)"></div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <button class="content__back unbutton">&larr; volver</button>
+        <h2 class="content__title">GastronomíaEx&oacute;tica</h2>
+        <p class="content__desc">&lt;Inserte texto de GastronomíaEx&oacute;tica aqu&iacute;&gt;</p>
+        <div class="content__images">
+          <div class="thumb thumb--prev">
+            <div class="thumb__inner" style="background-image: url(img/6.jpg)"></div>
+          </div>
+          <a href="proyecto1.html">
+            <div class="thumbgrid"></div>
+          </a>
+          <div class="thumb thumb--next">
+            <div class="thumb__inner" style="background-image: url(img/8.jpg)"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="menu">
+      <a class="menu__item">
+        <span class="menu__item-title">Relajaci&oacute;nVacacional</span>
+        <span class="menu__item-desc">Identidad de marca y material publicitario para un sitio web sobre
+          caba&ntilde;as.</span>
+      </a>
+      <a class="menu__item">
+        <span class="menu__item-title">Diversi&oacute;nJaponesa</span>
+        <span class="menu__item-desc">&lt;Inserte texto de Diversi&oacute;nJaponesa aqu&iacute;&gt;</span>
+      </a>
+      <a class="menu__item">
+        <span class="menu__item-title">FelízPosesi&oacute;n</span>
+        <span class="menu__item-desc">&lt;Inserte texto de FelízPosesi&oacute;n aqu&iacute;&gt;</span>
+      </a>
+      <a class="menu__item">
+        <span class="menu__item-title">MovilidadConectada</span>
+        <span class="menu__item-desc">&lt;Inserte texto de MovilidadConectada aqu&iacute;&gt;</span>
+      </a>
+      <a class="menu__item">
+        <span class="menu__item-title">HábitoSaludable</span>
+        <span class="menu__item-desc">&lt;Inserte texto de HábitoSaludable aqu&iacute;&gt;</span>
+      </a>
+      <a class="menu__item">
+        <span class="menu__item-title">InsumosOdontol&oacute;gicos</span>
+        <span class="menu__item-desc">&lt;Inserte texto de InsumosOdontol&oacute;gicos aqu&iacute;&gt;</span>
+      </a>
+      <a class="menu__item">
+        <span class="menu__item-title">GastronomíaEx&oacute;tica</span>
+        <span class="menu__item-desc">&lt;Inserte texto de GastronomíaEx&oacute;tica aqu&iacute;&gt;</span>
+      </a>
+    </nav>
+  </main>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/Flip.min.js"></script>
+  <script src="js/splitting.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
