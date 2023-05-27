@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "npx nodemon ./src/dev-server.js --ext js,html,css"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "serve": "^14.2.0"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.22",
+    "ws": "^8.13.0"
   }
 }

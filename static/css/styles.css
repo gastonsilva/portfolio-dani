@@ -80,7 +80,7 @@ header h2 {
     left: 0;
 }
 
-.diseno-web {
+/* .diseno-web {
     position: relative;
     top: 100px;
     left: 700px;
@@ -88,8 +88,8 @@ header h2 {
     content: "";
     background-image: url('../img/diseno-web.png');
     background-repeat: no-repeat;
-}
-
+} */
+/* 
 .diseno-web::before {
     position: relative;
     top: -70px;
@@ -104,14 +104,14 @@ header h2 {
     left: -400px;
     content: url('../img/diseno-web.png');
     opacity: 0.1;
-}
+} */
 
 .empatiza-separator {
     position: relative;
     top: 0px;
     left: 0px;
     width: 100%;
-    overflow:visible;
+    overflow: visible;
     background-image: url('../img/empatiza.png');
     background-repeat: repeat-x;
     height: 80px;
@@ -119,4 +119,44 @@ header h2 {
 
 .empatiza {
     background: linear-gradient(0deg, #FF279C, var(--color-bg) 200px) fixed no-repeat;
+}
+
+.diseno-web {
+    width: 100%;
+    height: calc(3 * 50px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+}
+
+.diseno-web-item {
+    background-image: url('../svg/diseno_web.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    animation: fadeInOut 5s ease-in-out infinite;
+}
+
+.diseno-web-item:nth-child(odd) {
+    animation-delay: 0s, 3s, 9s, 2s, 5s;
+}
+
+.diseno-web-item:nth-child(even) {
+    animation-delay: 1s, 8s, 6s, 2s, 4s, 11s, 13s, 15s, 17s;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.1;
+    }
 }
