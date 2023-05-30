@@ -15,188 +15,334 @@
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-
+  <script src="https://unpkg.com/gsap@3.11.5/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3.11.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/gsap@3.11.5/dist/TextPlugin.min.js"></script>
+  <script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
+  
 </head>
 
 <body>
   <div class="custom-cursor"></div>
-  <header id="header" class="container pt-4 pb-2 border-bottom border-warning">
-    <div class="row">
-      <div class="col">
-        <div class="diseno-web">
-          <div class="diseno-web-item"></div>
-          <div class="diseno-web-item"></div>
-          <div class="diseno-web-item"></div>
-          <div class="diseno-web-item"></div>
-          <div class="diseno-web-item"></div>
-          <div class="diseno-web-item"></div>
-          <div class="diseno-web-item"></div>
-          <div class="diseno-web-item"></div>
-          <div class="diseno-web-item"></div>
-        </div>
-      </div>
-    </div>
-    <div class="row pb-2 border-bottom border-warning">
-      <div class="col">
-        <h1>Relajación Vacacional</h1>
-        <p>Identidad de marca y material publicitario para un sitio web sobre caba&ntilde;as.</p>
-      </div>
-    </div>
-    <div class="row pt-4">
-      <div class="col-lg-3"></div>
-      <div class="col-lg-2">
-        <div class="row mb-4">
-          <div class="col">
-            <div class="no-shape"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <h2 class="fw-normal">Año</h2>
-            <p>2021</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <h2 class="fw-normal">Cliente</h2>
-            <p>Cabañas del Sur</p>
+  <div class="scroller">
+    <header id="header" class="container py-2">
+      <div class="row">
+        <div class="col">
+          <div class="diseno-web">
+            <div class="diseno-web-item"></div>
+            <div class="diseno-web-item"></div>
+            <div class="diseno-web-item"></div>
+            <div class="diseno-web-item"></div>
+            <div class="diseno-web-item"></div>
+            <div class="diseno-web-item"></div>
+            <div class="diseno-web-item"></div>
+            <div class="diseno-web-item"></div>
+            <div class="diseno-web-item"></div>
           </div>
         </div>
       </div>
-      <div class="col-lg-2">
-        <div class="row mb-4">
-          <div class="col">
-            <div class="circle"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <h2>Empatizá</h2>
-            <ul class="list-unstyled">
-              <li>Inclusión</li>
-              <li>Identidad</li>
-              <li>Confianza</li>
-            </ul>
-          </div>
+      <div class="row pb-2">
+        <div class="col">
+          <h1>Relajación Vacacional</h1>
+          <p>Identidad de marca y material publicitario para un sitio web sobre caba&ntilde;as.</p>
         </div>
       </div>
-      <div class="col-lg-2">
-        <div class="row mb-4">
-          <div class="col">
-            <div class="triangle"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <h2>Explorá</h2>
-            <ul class="list-unstyled">
-              <li>Diseño ux ui</li>
-              <li>Sintesis de investigación</li>
-              <li>Planificación</li>
-              <li>Estrategia</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-2">
-        <div class="row mb-4">
-          <div class="col">
-            <div class="square"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <h2>Visualizá</h2>
-            <ul class="list-unstyled">
-              <li>Diseño con imágenes fotográficas, creación de conceptos</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-1"></div>
-    </div>
-  </header>
-  <section id="intro" class="container pt-4 pb-2">
-    <div class="row mb-4">
-      <div class="col">
-        <h2>Diseño de sitio web</h2>
-        <img src="img/cabanas-intro.png" class="img-fluid mx-auto d-block" alt="Vista previa sitio web">
-      </div>
-    </div>
-    <div class="row border-bottom border-warning">
-      <div class="col-lg-1"></div>
-      <div class="col-lg-5 pt-4">
-        <h3 class="with-hashtag">Introducción</h2>
-          <p>Bienvenidos a nuestro sitio web de alquiler de cabañas en la hermosa zona de Chile. Aquí encontrarás una
-            selección cuidadosamente elegida de cabañas acogedoras y confortables, todas ubicadas en entornos
-            naturales de
-            gran belleza y tranquilidad. En nuestro sitio web, podrás explorar las diferentes opciones de alojamiento,
-            desde cabañas para parejas hasta cabañas familiares con todas las comodidades necesarias para una estadía
-            inolvidable. Nuestro objetivo es brindarte una experiencia única en la naturaleza chilena, donde puedas
-            desconectarte de la rutina y conectarte con la belleza del entorno. Esperamos que disfrutes navegando por
-            nuestro sitio y que encuentres la cabaña perfecta para tus próximas vacaciones. </p>
-      </div>
-      <div class="col-lg-5">
-        <figure class="figure">
-          <img src="img/cabanas-mobile.png" class="figure-img img-fluid" alt="Mobile">
-          <figcaption class="figure-caption text-center">Mobile</figcaption>
-        </figure>
-      </div>
-      <div class="col-lg-1"></div>
-    </div>
-    <div class="row pt-2 border-bottom border-warning">
-      <div class="col-lg-2"></div>
-      <div class="col-lg-8 text-center">
-        <p class="fs-1">Esperamos que disfrutes navegando por nuestro sitio y que encuentres la cabaña perfecta para tus
-          próximas
-          vacaciones</p>
-      </div>
-      <div class="col-lg-2"></div>
-    </div>
-    <div class="row pt-4 mb-4">
-      <div class="col justify-content-center">
-        <div class="diseno-web"></div>
-        <img src="img/cabanas-desktop.png" class="img-fluid mx-auto d-block" alt="Desktop">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col justify-content-center">
-        <figure class="figure container">
-          <div class="row mb-2">
-            <div class="col-1"></div>
+      <div class="row pt-4 enclosed">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-2">
+          <div class="row mb-4">
             <div class="col">
-              <figcaption class="figure-caption text-left">Pantalla Home</figcaption>
+              <div class="no-shape"></div>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg text-center">
-              <img src="img/cabanas-home-1.png" class="figure-img img-fluid" alt="Pantalla Home">
-            </div>
-            <div class="col-lg text-center">
-              <img src="img/cabanas-home-2.png" class="figure-img img-fluid" alt="Pantalla Home">
+            <div class="col">
+              <h2 class="fw-normal">Año</h2>
+              <p>2021</p>
             </div>
           </div>
-        </figure>
+          <div class="row">
+            <div class="col">
+              <h2 class="fw-normal">Cliente</h2>
+              <p>Cabañas del Sur</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="row mb-4">
+            <div class="col">
+              <div class="circle"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h2>Empatizar</h2>
+              <ul class="list-unstyled">
+                <li>Inclusión</li>
+                <li>Identidad</li>
+                <li>Confianza</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="row mb-4">
+            <div class="col">
+              <div class="triangle"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h2>Definir</h2>
+              <ul class="list-unstyled">
+                <li>Economía de Chile</li>
+                <li>Usuario potenciales</li>
+                <li>Biométrica de emociones</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="row mb-4">
+            <div class="col">
+              <div class="square"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h2>Idear</h2>
+              <ul class="list-unstyled">
+                <li>Arquitecturas</li>
+                <li>Task flow</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="row mb-4">
+            <div class="col">
+              <div class="rectangle"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h2>Bocetar</h2>
+              <ul class="list-unstyled">
+                <li>Diseño con imágenes fotográficas, creación de conceptos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
+      <div class="col-lg-1"></div>
+    </header>
+    <section id="intro" class="container pt-4 pb-2 mb-4">
+      <div class="row mb-4 intro-1">
+        <div class="col">
+          <h2>Diseño de sitio web</h2>
+          <img src="img/cabanas-intro.png" class="img-fluid mx-auto d-block" alt="Vista previa sitio web">
+        </div>
+      </div>
+      <div class="row intro-2">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5 pt-4">
+          <h3 class="with-hashtag">Introducción</h2>
+            <p>Bienvenidos a nuestro sitio web de alquiler de cabañas en la hermosa zona de Chile. Aquí encontrarás una
+              selección cuidadosamente elegida de cabañas acogedoras y confortables, todas ubicadas en entornos
+              naturales de
+              gran belleza y tranquilidad. En nuestro sitio web, podrás explorar las diferentes opciones de alojamiento,
+              desde cabañas para parejas hasta cabañas familiares con todas las comodidades necesarias para una estadía
+              inolvidable. Nuestro objetivo es brindarte una experiencia única en la naturaleza chilena, donde puedas
+              desconectarte de la rutina y conectarte con la belleza del entorno. Esperamos que disfrutes navegando por
+              nuestro sitio y que encuentres la cabaña perfecta para tus próximas vacaciones. </p>
+        </div>
+        <div class="col-lg-5">
+          <figure class="figure">
+            <img src="img/cabanas-mobile.png" class="figure-img img-fluid" alt="Mobile">
+            <figcaption class="figure-caption text-center">Mobile</figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+      <div class="row py-4 enclosed">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 text-center">
+          <div class="intro-type fs-1"></div>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+      <div class="row pt-4 mb-4 intro-3">
+        <div class="col justify-content-center">
+          <img src="img/cabanas-desktop.png" class="img-fluid mx-auto d-block" alt="Desktop">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col justify-content-center">
+          <figure class="figure container">
+            <div class="row mb-2 intro-4-1">
+              <div class="col">
+                <figcaption class="figure-caption text-left">Pantalla Home</figcaption>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg text-center intro-4-2">
+                <img src="img/cabanas-home-1.png" class="figure-img img-fluid" alt="Pantalla Home">
+              </div>
+              <div class="col-lg text-center intro-4-3">
+                <img src="img/cabanas-home-2.png" class="figure-img img-fluid" alt="Pantalla Home">
+              </div>
+            </div>
+          </figure>
+        </div>
+      </div>
+      <!-- <div class="row">
       <div class="col text-center">
         <button type="button" class="btn btn-primary mx-auto">Ver mapa de sitio</button>
       </div>
-    </div>
-  </section>
-  <section id="plan" class="container" data-cursor="circle">
-    <div class="empatiza-separator"></div>
-    <div class="row">
-      <div class="col text-center">
-        <h2>Empatizá</h2>
+    </div> -->
+    </section>
+    <section id="plan">
+      <div class="container">
+        <div class="row py-4 mb-4">
+          <div class="col text-center">
+            <h2>Planific&aacute;</h2>
+          </div>
+        </div>
+        <div>
+          <div class="row align-items-center enclosed-alt p-4">
+            <div class="col">
+              <h3>Empatizar</h3>
+            </div>
+            <div class="col-8">Descripción general, investigación de usuario</div>
+            <div class="col">
+              <svg class="symbol" viewBox="0 0 76 74">
+                <use xlink:href="svg/symbols.svg#star"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="row align-items-center enclosed-alt p-4">
+            <div class="col">
+              <h3>Definir</h3>
+            </div>
+            <div class="col-8">Encuestas, entrevistas, objetivos</div>
+            <div class="col">
+              <svg class="symbol" viewBox="0 0 64 77">
+                <use xlink:href="svg/symbols.svg#pencil"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="row align-items-center enclosed-alt p-4">
+            <div class="col">
+              <h3>Idear</h3>
+            </div>
+            <div class="col-8">Propuesta de valor</div>
+            <div class="col">
+              <svg class="symbol" viewBox="0 0 62 87">
+                <use xlink:href="svg/symbols.svg#bulb"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="row align-items-center enclosed-alt p-4">
+            <div class="col">
+              <h3>Bocetar</h3>
+            </div>
+            <div class="col-8">Minimalista, basado en la naturaleza, serenidad, conexión, fluidez</div>
+            <div class="col">
+              <svg class="symbol" viewBox="0 0 46 88">
+                <use xlink:href="svg/symbols.svg#phone"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+    <section id="emp" data-cursor="circle">
+      <div class="container">
+        <div class="row">
+          <div class="col justify-content-center">
+            <h2 class="with-circle">Empatizar</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>Para nuestro proyecto adoptamos una forma participativa de enfoque, ya que nos comprometimos con el
+              usuario
+              para brindarle las mejores ubicaciones para disfrutar de la naturaleza en este hermoso país. Descubrimos
+              que
+              la zona en la que se encuentran nuestras cabañas es ideal para aquellos que buscan desconectar de la
+              ciudad
+              y disfrutar de la tranquilidad y la belleza natural de la montaña, los ríos y los lagos cristalinos.</p>
+            <p>
+              Además, nos enfocamos en diseñar nuestras cabañas para brindar la máxima comodidad y tranquilidad durante
+              la
+              estadía de nuestros huéspedes. También investigamos y elegimos cuidadosamente las actividades cercanas que
+              ofrecen una variedad de opciones para aquellos que buscan aventuras o simplemente desean relajarse.
+            </p>
+            <p>
+              Adoptamos los principios básicos del diseño centrado en el usuario a medida que participamos, creamos,
+              probamos e interactuamos a lo largo del proceso. </p>
+          </div>
+          <div class="col-lg align-items-left">
+            <img src="img/emp1.png" class="img-fluid" alt="Empatizar">
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col">
+            <img src="img/emp2.png" class="img-fluid" alt="Empatizar">
+          </div>
+          <div class="col px-4">
+            <h3>Guia de preguntas:</h3>
+            <ul>
+              <li>¿Cuáles fueron los criterios que se tuvieron en cuenta para elegir la zona en la que se encuentran las
+                cabañas para alquilar?</li>
+              <li>¿Cómo se aseguraron de que las cabañas ofrecieran la máxima comodidad a los huéspedes?</li>
+              <li>¿Qué tipo de actividades se pueden realizar en las zonas cercanas a las cabañas?</li>
+              <li>¿Cómo influyó la investigación en la selección de las actividades que se ofrecen a los huéspedes?</li>
+              <li>¿Cómo se aseguraron de que las cabañas estuvieran ubicadas en un lugar seguro?</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="def" data-cursor="triangle">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="with-triangle">Definir</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ul class="list-unstyled">
+              <li>Facil acceso</li>
+              <li>Escapate del stress</li>
+              <li>+30 estado economico medio alto</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <figure>
+              <figcaption></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col">¿Cómo podemos hacer para ayudar a las personas a escapar del estrés de la ciudad y relajarte
+            rodeado de impresionantes vistas de la montaña, ríos y lagos cristalinos?</div>
+        </div>
+      </div>
+  </div>
   </section>
-  <section id="explore"></section>
-  <section id="visual"></section>
+  <section id="ide">
+  </section>
+  <section id="boc">
+  </section>
+  </div>
   <script src="js/replaceCursor.js"></script>
-  <script src="js/autoHash.js"></script>
+  <!-- <script src="js/autoHash.js"></script> -->
+  <script src="js/animations.js"></script>
 </body>
 
 </html>

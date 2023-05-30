@@ -8,14 +8,13 @@ const sections = document.querySelectorAll(
   "h5",
   "h6"
 );
-window.addEventListener("scroll", () => {
-  let currentSection = "";
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
-    if (scrollY >= sectionTop - sectionHeight / 3) {
-      currentSection = section.getAttribute("id");
-    }
-  });
-  window.location.hash = `#${currentSection}`;
+window.addEventListener('beforeunload', () => {
+  localStorage.setItem('scrollPosition', window.scrollY);
+});
+window.addEventListener('load', () => {
+  const scrollPosition = localStorage.getItem('scrollPosition');
+  if (scrollPosition) {
+    window.scrollTo(0, scrollPosition);
+    localStorage.removeItem('scrollPosition');
+  }
 });

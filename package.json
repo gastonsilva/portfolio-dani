@@ -10,10 +10,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "serve": "^14.2.0"
-  },
-  "dependencies": {
     "nodemon": "^2.0.22",
+    "serve": "^14.2.0",
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.1",
     "ws": "^8.13.0"
   }
 }
