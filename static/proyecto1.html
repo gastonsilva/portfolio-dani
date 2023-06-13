@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="height=750, width=device-width, initial-scale=1">
   <title>nani > proyecto1</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,138 +14,122 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/css/revealer.css">
   <script src="https://unpkg.com/gsap@3.11.5/dist/gsap.min.js"></script>
   <script src="https://unpkg.com/gsap@3.11.5/dist/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/gsap@3.11.5/dist/TextPlugin.min.js"></script>
   <script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
-  
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <link href="/svg/symbols.svg" rel="preload" as="image" type="image/svg+xml">
+  <script>document.documentElement.className = 'js';</script>
 </head>
 
-<body>
+<body class="loading">
   <div class="custom-cursor"></div>
-  <div class="scroller">
-    <header id="header" class="container py-2">
-      <div class="row">
+  <div id="scroller">
+    <header id="header" class="container">
+      <div class="row gallery vh-100 align-items-center">
         <div class="col">
-          <div class="diseno-web">
-            <div class="diseno-web-item"></div>
-            <div class="diseno-web-item"></div>
-            <div class="diseno-web-item"></div>
-            <div class="diseno-web-item"></div>
-            <div class="diseno-web-item"></div>
-            <div class="diseno-web-item"></div>
-            <div class="diseno-web-item"></div>
-            <div class="diseno-web-item"></div>
-            <div class="diseno-web-item"></div>
+          <div class="grid grid--layout">
+            <div class="grid__item" data-delay="150" data-direction="ttb"></div>
+            <div class="grid__item" data-delay="300" data-direction="ttb"></div>
+            <div class="grid__item" data-delay="200" data-direction="ttb"></div>
+            <div class="grid__item" data-delay="40" data-direction="ttb"></div>
+            <div class="grid__item" data-delay="70" data-direction="ttb"></div>
+            <div class="grid__item" data-delay="100" data-direction="ttb"></div>
+            <div class="grid__item" data-delay="100" data-direction="ttb"></div>
           </div>
         </div>
       </div>
-      <div class="row pb-2">
-        <div class="col">
-          <h1>Relajación Vacacional</h1>
-          <p>Identidad de marca y material publicitario para un sitio web sobre caba&ntilde;as.</p>
-        </div>
-      </div>
-      <div class="row pt-4 enclosed">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-2">
-          <div class="row mb-4">
-            <div class="col">
-              <div class="no-shape"></div>
-            </div>
+      <div class="menu">
+        <div class="row my-4">
+          <div class="col menu-symbol">
           </div>
-          <div class="row">
-            <div class="col">
-              <h2 class="fw-normal">Año</h2>
-              <p>2021</p>
-            </div>
+          <div class="col menu-symbol">
+            <svg class="symbol">
+              <use href="/svg/symbols.svg#asterisk"></use>
+            </svg>
           </div>
-          <div class="row">
-            <div class="col">
-              <h2 class="fw-normal">Cliente</h2>
-              <p>Cabañas del Sur</p>
-            </div>
+          <div class="col menu-symbol">
+            <svg class="symbol">
+              <use href="/svg/symbols.svg#circle"></use>
+            </svg>
           </div>
-        </div>
-        <div class="col-lg-2">
-          <div class="row mb-4">
-            <div class="col">
-              <div class="circle"></div>
-            </div>
+          <div class="col menu-symbol">
+            <svg class="symbol">
+              <use href="/svg/symbols.svg#triangle"></use>
+            </svg>
           </div>
-          <div class="row">
-            <div class="col">
-              <h2>Empatizar</h2>
-              <ul class="list-unstyled">
-                <li>Inclusión</li>
-                <li>Identidad</li>
-                <li>Confianza</li>
-              </ul>
-            </div>
+          <div class="col menu-symbol">
+            <svg class="symbol">
+              <use href="/svg/symbols.svg#square"></use>
+            </svg>
+          </div>
+          <div class="col menu-symbol">
+            <svg class="symbol">
+              <use href="/svg/symbols.svg#diamond"></use>
+            </svg>
           </div>
         </div>
-        <div class="col-lg-2">
-          <div class="row mb-4">
-            <div class="col">
-              <div class="triangle"></div>
-            </div>
+        <div class="row">
+          <div class="col menu-text">
+            <h2 class="fw-normal">Año</h2>
+            <p>2021</p>
+            <h2 class="fw-normal">Cliente</h2>
+            <p>Cabañas del Sur</p>
           </div>
-          <div class="row">
-            <div class="col">
-              <h2>Definir</h2>
-              <ul class="list-unstyled">
-                <li>Economía de Chile</li>
-                <li>Usuario potenciales</li>
-                <li>Biométrica de emociones</li>
-              </ul>
-            </div>
+          <div class="col menu-text">
+            <h2>Introduccion</h2>
+          </div>
+          <div class="col menu-text">
+            <h2>Empatizar</h2>
+            <ul class="list-unstyled">
+              <li>Inclusión</li>
+              <li>Identidad</li>
+              <li>Confianza</li>
+            </ul>
+          </div>
+          <div class="col menu-text">
+            <h2>Definir</h2>
+            <ul class="list-unstyled">
+              <li>Economía de Chile</li>
+              <li>Usuario potenciales</li>
+              <li>Biométrica de emociones</li>
+            </ul>
+          </div>
+          <div class="col menu-text">
+            <h2>Idear</h2>
+            <ul class="list-unstyled">
+              <li>Arquitecturas</li>
+              <li>Task flow</li>
+            </ul>
+          </div>
+          <div class="col menu-text">
+            <h2>Bocetar</h2>
+            <ul class="list-unstyled">
+              <li>Diseño con imágenes fotográficas, creación de conceptos</li>
+            </ul>
           </div>
         </div>
-        <div class="col-lg-2">
-          <div class="row mb-4">
-            <div class="col">
-              <div class="square"></div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <h2>Idear</h2>
-              <ul class="list-unstyled">
-                <li>Arquitecturas</li>
-                <li>Task flow</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2">
-          <div class="row mb-4">
-            <div class="col">
-              <div class="rectangle"></div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <h2>Bocetar</h2>
-              <ul class="list-unstyled">
-                <li>Diseño con imágenes fotográficas, creación de conceptos</li>
-              </ul>
-            </div>
+        <div class="row main-title py-4 enclosed">
+          <div class="col">
+            <h1>Relajación Vacacional</h1>
+            <p>Identidad de marca y material publicitario para un sitio web sobre caba&ntilde;as.</p>
           </div>
         </div>
       </div>
-      <div class="col-lg-1"></div>
     </header>
-    <section id="intro" class="container pt-4 pb-2 mb-4">
-      <div class="row mb-4 intro-1">
+    <section id="intro" class="container" style="overflow: hidden;">
+      <div class="row intro-1 mt-4 align-items-center">
         <div class="col">
-          <h2>Diseño de sitio web</h2>
+          <h2 class="mb-4">Diseño de sitio web</h2>
           <img src="img/cabanas-intro.png" class="img-fluid mx-auto d-block" alt="Vista previa sitio web">
         </div>
       </div>
-      <div class="row intro-2">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-5 pt-4">
+      <div class="row intro-2 vh-100 align-items-center">
+        <div class="col-1"></div>
+        <div class="col-5 pt-4 intro-2-0">
           <h3 class="with-hashtag">Introducción</h2>
             <p>Bienvenidos a nuestro sitio web de alquiler de cabañas en la hermosa zona de Chile. Aquí encontrarás una
               selección cuidadosamente elegida de cabañas acogedoras y confortables, todas ubicadas en entornos
@@ -156,43 +140,51 @@
               desconectarte de la rutina y conectarte con la belleza del entorno. Esperamos que disfrutes navegando por
               nuestro sitio y que encuentres la cabaña perfecta para tus próximas vacaciones. </p>
         </div>
-        <div class="col-lg-5">
+        <div class="col-5 intro-2-1">
           <figure class="figure">
             <img src="img/cabanas-mobile.png" class="figure-img img-fluid" alt="Mobile">
             <figcaption class="figure-caption text-center">Mobile</figcaption>
           </figure>
         </div>
-        <div class="col-lg-1"></div>
+        <div class="col-1"></div>
       </div>
-      <div class="row py-4 enclosed">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8 text-center">
-          <div class="intro-type fs-1"></div>
-        </div>
-        <div class="col-lg-2"></div>
-      </div>
-      <div class="row pt-4 mb-4 intro-3">
-        <div class="col justify-content-center">
-          <img src="img/cabanas-desktop.png" class="img-fluid mx-auto d-block" alt="Desktop">
+      <div class="intro-3" style="height: 200vh !important;">
+        <div class="row vh-100 align-items-center">
+          <div class="col-2"></div>
+          <div class="col-8 text-center">
+            <div class="intro-type fs-1"></div>
+          </div>
+          <div class="col-2"></div>
         </div>
       </div>
-      <div class="row">
-        <div class="col justify-content-center">
-          <figure class="figure container">
-            <div class="row mb-2 intro-4-1">
-              <div class="col">
-                <figcaption class="figure-caption text-left">Pantalla Home</figcaption>
+      <div class="intro-4" style="height: 250vh !important;">
+        <div class="row vh-100 align-items-center">
+          <div class="col">
+            <img src="img/cabanas-desktop.png" class="img-fluid mx-auto d-block" alt="Desktop">
+          </div>
+        </div>
+      </div>
+      <div class="intro-5" style="height: 300vh !important;">
+        <div class="row vh-100">
+          <div class="col justify-content-center">
+            <figure class="figure container">
+              <div class="row mb-2 intro-5-title">
+                <div class="col">
+                  <figcaption class="figure-caption text-left">Pantalla Home</figcaption>
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-lg text-center intro-4-2">
-                <img src="img/cabanas-home-1.png" class="figure-img img-fluid" alt="Pantalla Home">
+              <div class="row align-items-center">
+                <div class="col text-center intro-5-0">
+                  <img src="img/cabanas-home-1.png" class="figure-img img-fluid" alt="Pantalla Home"
+                    style="max-height: 90vh">
+                </div>
+                <div class="col text-center intro-5-1">
+                  <img src="img/cabanas-home-2.png" class="figure-img img-fluid" alt="Pantalla Home"
+                    style="max-height: 90vh">
+                </div>
               </div>
-              <div class="col-lg text-center intro-4-3">
-                <img src="img/cabanas-home-2.png" class="figure-img img-fluid" alt="Pantalla Home">
-              </div>
-            </div>
-          </figure>
+            </figure>
+          </div>
         </div>
       </div>
       <!-- <div class="row">
@@ -201,70 +193,92 @@
       </div>
     </div> -->
     </section>
-    <section id="plan">
-      <div class="container">
-        <div class="row py-4 mb-4">
-          <div class="col text-center">
-            <h2>Planific&aacute;</h2>
+    <section id="plan" class="mb-4">
+      <div class="container" style="overflow: hidden;">
+        <div class="plan" style="height: 100vh;">
+          <div class="row">
+            <div class="col">
+              <div class="diseno-web">
+                <div class="diseno-web-item"></div>
+                <div class="diseno-web-item"></div>
+                <div class="diseno-web-item"></div>
+                <div class="diseno-web-item"></div>
+                <div class="diseno-web-item"></div>
+                <div class="diseno-web-item"></div>
+                <div class="diseno-web-item"></div>
+                <div class="diseno-web-item"></div>
+                <div class="diseno-web-item"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center plan">
+            <div class="col">
+              <div class="row py-4 mb-4 plan-title">
+                <div class="col text-center">
+                  <h2>Planific&aacute;</h2>
+                </div>
+              </div>
+              <div>
+                <div class="row align-items-center enclosed-alt p-4 plan-item">
+                  <div class="col">
+                    <h3>Empatizar</h3>
+                  </div>
+                  <div class="col-8">Descripción general, investigación de usuario</div>
+                  <div class="col">
+                    <svg class="plan-symbol" viewBox="0 0 76 74">
+                      <use xlink:href="/svg/plan_symbols.svg#star"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="row align-items-center enclosed-alt p-4 plan-item">
+                  <div class="col">
+                    <h3>Definir</h3>
+                  </div>
+                  <div class="col-8">Encuestas, entrevistas, objetivos</div>
+                  <div class="col">
+                    <svg class="plan-symbol" viewBox="0 0 64 77">
+                      <use xlink:href="/svg/plan_symbols.svg#pencil"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="row align-items-center enclosed-alt p-4 plan-item">
+                  <div class="col">
+                    <h3>Idear</h3>
+                  </div>
+                  <div class="col-8">Propuesta de valor</div>
+                  <div class="col">
+                    <svg class="plan-symbol" viewBox="0 0 62 87">
+                      <use xlink:href="/svg/plan_symbols.svg#bulb"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="row align-items-center enclosed-alt p-4 plan-item">
+                  <div class="col">
+                    <h3>Bocetar</h3>
+                  </div>
+                  <div class="col-8">Minimalista, basado en la naturaleza, serenidad, conexión, fluidez</div>
+                  <div class="col">
+                    <svg class="plan-symbol" viewBox="0 0 46 88">
+                      <use xlink:href="/svg/plan_symbols.svg#phone"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div>
-          <div class="row align-items-center enclosed-alt p-4">
-            <div class="col">
-              <h3>Empatizar</h3>
-            </div>
-            <div class="col-8">Descripción general, investigación de usuario</div>
-            <div class="col">
-              <svg class="symbol" viewBox="0 0 76 74">
-                <use xlink:href="svg/symbols.svg#star"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="row align-items-center enclosed-alt p-4">
-            <div class="col">
-              <h3>Definir</h3>
-            </div>
-            <div class="col-8">Encuestas, entrevistas, objetivos</div>
-            <div class="col">
-              <svg class="symbol" viewBox="0 0 64 77">
-                <use xlink:href="svg/symbols.svg#pencil"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="row align-items-center enclosed-alt p-4">
-            <div class="col">
-              <h3>Idear</h3>
-            </div>
-            <div class="col-8">Propuesta de valor</div>
-            <div class="col">
-              <svg class="symbol" viewBox="0 0 62 87">
-                <use xlink:href="svg/symbols.svg#bulb"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="row align-items-center enclosed-alt p-4">
-            <div class="col">
-              <h3>Bocetar</h3>
-            </div>
-            <div class="col-8">Minimalista, basado en la naturaleza, serenidad, conexión, fluidez</div>
-            <div class="col">
-              <svg class="symbol" viewBox="0 0 46 88">
-                <use xlink:href="svg/symbols.svg#phone"></use>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
     <section id="emp" data-cursor="circle">
-      <div class="container">
-        <div class="row">
-          <div class="col justify-content-center">
-            <h2 class="with-circle">Empatizar</h2>
+      <div class="container emp vh-100">
+        <div class="row my-5 justify-content-center">
+          <div class="col text-left">
+            <h2><svg class="symbol d-inline-block">
+                <use href="/svg/symbols.svg#circle"></use>
+              </svg>Empatizar</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col">
+          <div class="col-5">
             <p>Para nuestro proyecto adoptamos una forma participativa de enfoque, ya que nos comprometimos con el
               usuario
               para brindarle las mejores ubicaciones para disfrutar de la naturaleza en este hermoso país. Descubrimos
@@ -282,14 +296,16 @@
               Adoptamos los principios básicos del diseño centrado en el usuario a medida que participamos, creamos,
               probamos e interactuamos a lo largo del proceso. </p>
           </div>
-          <div class="col-lg align-items-left">
-            <img src="img/emp1.png" class="img-fluid" alt="Empatizar">
+          <div class="col-2"></div>
+          <div class="col-5 align-items-left">
+            <img src="img/emp1.png" class="img-fluid emp-1" alt="Empatizar" style="max-height: 40vh;">
           </div>
         </div>
         <div class="row align-items-center">
           <div class="col">
-            <img src="img/emp2.png" class="img-fluid" alt="Empatizar">
+            <img src="img/emp2.png" class="img-fluid emp-2" alt="Empatizar" style="max-height: 40vh;">
           </div>
+          <div class="col-2"></div>
           <div class="col px-4">
             <h3>Guia de preguntas:</h3>
             <ul>
@@ -305,44 +321,187 @@
       </div>
     </section>
     <section id="def" data-cursor="triangle">
-      <div class="container">
+      <div class="container vh-100 def">
         <div class="row">
           <div class="col">
-            <h2 class="with-triangle">Definir</h2>
+            <div class="row my-5">
+              <div class="col text-left">
+                <h2><svg class="symbol d-inline-block">
+                    <use href="/svg/symbols.svg#triangle"></use>
+                  </svg>Definir</h2>
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-1"></div>
+              <div class="col-1 gt1">
+                <img src="/svg/big_gt.svg">
+              </div>
+              <div class="col-2"></div>
+              <div class="col-4 text-center fs-4 fw-bold">
+                <ul class="list-unstyled">
+                  <li>Facil acceso</li>
+                  <li>Escapate del stress</li>
+                  <li>+30 estado economico medio alto</li>
+                </ul>
+              </div>
+              <div class="col-4"></div>
+            </div>
+            <div class="row align-items-center justify-content-center" style="height: 50vh;">
+              <div class="col">
+                <figure class="figure mx-auto d-block align-items-center justify-content-center">
+                  <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col mb-3">
+                      <figcaption class="figure-caption fw-bold" style="color: black;"># User persona</figcaption>
+                    </div>
+                  </div>
+                  <div class="row person">
+                    <div class="col w-100">
+                      <img src=" /img/user_persona.png" class="figure-img img-fluid mx-auto d-block" alt="User persona">
+                    </div>
+                  </div>
+                </figure>
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-1"> </div>
+              <div class="col-1 gt2">
+                <img src="/svg/big_gt2.svg" class="img-fluid">
+              </div>
+              <div class="col-8 fs-3 fw-bold align-self-center">¿Cómo podemos hacer para ayudar a las personas a escapar
+                del estrés de la
+                ciudad y
+                relajarte
+                rodeado de impresionantes vistas de la montaña, ríos y lagos cristalinos?</div>
+              <div class="col-2"></div>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <ul class="list-unstyled">
-              <li>Facil acceso</li>
-              <li>Escapate del stress</li>
-              <li>+30 estado economico medio alto</li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <figure>
-              <figcaption></figcaption>
-            </figure>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col"></div>
-          <div class="col">¿Cómo podemos hacer para ayudar a las personas a escapar del estrés de la ciudad y relajarte
-            rodeado de impresionantes vistas de la montaña, ríos y lagos cristalinos?</div>
         </div>
       </div>
-  </div>
-  </section>
-  <section id="ide">
-  </section>
-  <section id="boc">
-  </section>
+    </section>
+    <section id="ide">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col">
+            <div class="row align-items-center my-5">
+              <div class="col text-left">
+                <h2><svg class="symbol d-inline-block">
+                    <use href="/svg/symbols.svg#square"></use>
+                  </svg>Idear</h2>
+              </div>
+              <div class="col">
+                <img src="/img/ux.png" class="float-end">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h3># Arquitectura</h3>
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col text-center">
+                <img src="/img/diagrama.png" class="mx-auto">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col">
+            <div class="row">
+              <div class="col">
+                <h3># Taskflow</h3>
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col text-center">
+                <img src="/img/taskflow.png" class="mx-auto">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="boc">
+      <div class="container">
+        <div class="vh-100">
+          <div class="row my-5">
+            <div class="col">
+              <h2><svg class="symbol d-inline-block">
+                  <use href="/svg/symbols.svg#diamond"></use>
+                </svg>Bocetar</h2>
+            </div>
+            <div class="col">
+              <img src="/img/ui.png" class="float-end">
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-1"></div>
+            <div class="col-4 text-center">
+              La elección de colores tierras y verdosos para la identidad visual fue elegida por la tranquilidad que
+              los
+              mismos emanan en conjunto. Estos colores también pueden evocar una sensación de conexión con el medio
+              ambiente y
+              la sostenibilidad. En cuanto a sus formas son orgánicas lo que da sensación de que todo fluye.
+            </div>
+            <div class="col-2"></div>
+            <div class="col-4 text-right">
+              <img src="/img/boc1.png">
+            </div>
+            <div class="col-1"></div>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              <h3># Wireframe logueo</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <img src="/img/boc2.png">
+            </div>
+          </div>
+        </div>
+        <div class="vh-100">
+          <div class="row align-items-center">
+            <div class="col-1"></div>
+            <div class="col-1">
+              <img src="/svg/big_gt3.svg" class="img-fluid">
+            </div>
+            <div class="col-8 fs-3 fw-bold align-self-center colores" style="color: #FF279C;"></div>
+            <div class="col-2"></div>
+          </div>
+          <!-- <div class="row">
+              <div class="col">COLORES</div>
+            </div> -->
+          <div class="row">
+            <div class="col text-center"><img src="/img/boc3.png"></div>
+          </div>
+          <div class="row">
+            <div class="col text-center boc4"><img src="/img/boc4.png"></div>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col text-center boc5"><img src="/svg/gracias.svg"></div>
+        </div>
+      </div>
+    </section>
   </div>
   <script src="js/replaceCursor.js"></script>
-  <!-- <script src="js/autoHash.js"></script> -->
   <script src="js/animations.js"></script>
+  <script src="js/demo.js"></script>
+  <script src="js/revealer.js"></script>
+  <script>
+    {
+      const DOM = {};
+      DOM.body = document.body;
+      imagesLoaded(document.querySelectorAll('.grid__item'), { background: true }, () => {
+        DOM.body.classList.remove('loading');
+        new GridManager(document.querySelector('.grid'), {
+          hasTilt: true,
+          tilt: { maxTranslationX: 25, maxTranslationY: 25 }
+        });
+      });
+    }
+  </script>
 </body>
 
 </html>
